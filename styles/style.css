@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+.roboto-font {
+    font-optical-sizing: auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.hind-madurai-font {
+    font-optical-sizing: auto;
+    font-family: "Hind Madurai", sans-serif;
+}
+
+.inter-font {
+    font-optical-sizing: auto;
+    font-family: "Inter", sans-serif;
+}
