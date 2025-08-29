@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+  <title>Emergency Service Directory</title>
+  <link href="assets/logo.png" type="image/x-icon" rel="icon">
+
+  <!-- tailored styles -->
+  <link href="styles/style.css" rel="stylesheet">
+
+  <!-- tailwind link -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- font-awesome link -->
+  <link crossorigin="anonymous" referrerpolicy="no-referrer"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- daisyUI link -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="inter-font">
+  <header>
+    <!-- Navigation Area -->
+    <nav class="pt-6 px-16 justify-between items-center flex max-sm:pt-4 max-sm:px-4">
+
+      <!-- Logo Header & Text Title / Left Portion -->
+      <div class="gap-2 items-center flex">
+        <img alt="Logo" src="assets/logo.png" class="max-h-12 max-w-12">
+        <h1 class="font-extrabold text-[#00a63e] max-sm:text-sm text-3xl">Emergency<br />Service</h1>
+      </div>
+
+      <!-- stats bar navigation / right portion -->
+      <div>
+        <ul class="gap-5 items-center flex max-sm:text-xs max-sm:gap-2">
+
+          <li class="p-3 max-sm:p-2 rounded-[50px] h-14 w-32 max-sm:h-7 max-sm:w-16 gap-1 justify-center items-center flex font-extrabold bg-[#41ff6b1a]">
+            <span id="globalHeartCount">0</span> <img alt="Given Heart" src="assets/heart.png" class="h-5 max-w-5">
+          </li>
+
+          <li class="p-3 max-sm:p-2 rounded-[50px] h-14 w-32 max-sm:h-7 max-sm:w-16 gap-1 justify-center items-center flex font-extrabold bg-[#41ff6b1a]">
+            <span id="globalCoinCount">100</span> <img alt="Remaining Coin" src="assets/coin.png" class="h-5 max-w-5">
+          </li>
+
+          <li
+            class="text-white bg-[#00a63e] font-semibold p-3 max-sm:p-2 rounded-[50px] h-14 w-32 max-sm:h-7 max-sm:w-16 gap-1 justify-center items-center flex">
+            <span id="globalCopyCount">0</span>Copy
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Section for Banner -->
+    <div
+      class="gap-2 mt-4 py-7 px-16 text-white text-center justify-center items-center flex-col flex bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+      <img alt="Logo" src="assets/logo-dark.png" class="max-h-24 max-w-24">
+      <h1 class="max-sm:text-2xl text-5xl font-bold hind-madurai-font">Emergency Service Directory</h1>
+      <p class="max-sm:text-xs text-xl font-semibold hind-madurai-font">
+        Government Emergency Services at Your Fingertip – A Project by Government of the people’s Republic of Bangladesh
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div class="mx-8 mt-14 gap-7 max-sm:items-center max-sm:flex-col-reverse justify-between flex">
+      <div class="gap-7 w-3/4 max-sm:w-full max-sm:mx-auto max-sm:grid-cols-1 grid-cols-3 grid">
+
+        <!-- Beginning of Single Card Element -->
+        <div class="bg-[#41ff6b1a] rounded-3xl shadow-sm p-5 my-card">
+
+          <div class="mb-4 items-center justify-between flex"> <!-- Heart and icon -->
+            <img alt="" src="assets/emergency.png" class="p-[14px] h-[60px] w-[60px] rounded-2xl bg-red-100">
+            <span class="cardHeart cursor-pointer">
+              <i class="text-xl fa-regular fa-heart"></i>
+            </span>
+          </div>
+
+          <div class="mb-6"> <!-- Description and title -->
+            <h2 class="hind-madurai-font font-bold text-2xl cardMainHeader">National Emergency</h2>
+            <p class="roboto-font text-[#5c5c5c] text-lg">Call for any help</p>
+          </div>
+
+          <div class="mb-6"> <!-- Short info and number -->
+            <h1 class="roboto-font font-bold text-4xl cardPhoneNumber">999</h1>
+            <p class="text-[#5C5C5C] px-4 hind-madurai font-normal text-lg">Emergency</p>
+          </div>
+
+          <div class="roboto-font gap-2 justify-between flex">
+            <button class="copyButton rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button class="callButton text-white bg-[#00A63E] rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+
+        </div>
+        <!-- Ending of Single Card Element -->
+
+        <!-- Beginning of Single Card Element -->
+        <div class="bg-[#41ff6b1a] rounded-3xl shadow-sm p-5 my-card">
+
+          <div class="mb-4 items-center justify-between flex"> <!-- Heart and icon -->
+            <img alt="" src="assets/Bangladesh-Railway.png" class="p-[14px] h-[60px] w-[60px] rounded-2xl bg-orange-100">
+            <span class="cardHeart cursor-pointer">
+              <i class="text-xl fa-regular fa-heart"></i>
+            </span>
+          </div>
+
+          <div class="mb-6"> <!-- Description and title -->
+            <h2 class="hind-madurai-font font-bold text-2xl cardMainHeader">Bangladesh-Railway</h2>
+            <p class="roboto-font text-[#5c5c5c] text-lg">Bangladesh Railway</p>
+          </div>
+
+          <div class="mb-6"> <!-- Short info and number -->
+            <h1 class="roboto-font font-bold text-4xl cardPhoneNumber">01711506137</h1>
+            <p class="text-[#5C5C5C] px-4 hind-madurai font-normal text-lg">Railway</p>
+          </div>
+
+          <div class="roboto-font gap-2 justify-between flex">
+            <button class="copyButton rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button class="callButton text-white bg-[#00A63E] rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+
+        </div>
+        <!-- Ending of Single Card Element -->
+
+        <!-- Beginning of Single Card Element -->
+        <div class="bg-[#41ff6b1a] rounded-3xl shadow-sm p-5 my-card">
+
+          <div class="mb-4 items-center justify-between flex"> <!-- Heart and icon -->
+            <img alt="" src="assets/brac.png" class="p-[14px] h-[60px] w-[60px] rounded-2xl bg-purple-100">
+            <span class="cardHeart cursor-pointer">
+              <i class="text-xl fa-regular fa-heart"></i>
+            </span>
+          </div>
+
+          <div class="mb-6"> <!-- Description and title -->
+            <h2 class="hind-madurai-font font-bold text-2xl cardMainHeader">BRAC NGO</h2>
+            <p class="roboto-font text-[#5c5c5c] text-lg">BRAC Centre</p>
+          </div>
+
+          <div class="mb-6"> <!-- Short info and number -->
+            <h1 class="roboto-font font-bold text-4xl cardPhoneNumber">02222-281265</h1>
+            <p class="text-[#5C5C5C] px-4 hind-madurai font-normal text-lg">NGO</p>
+          </div>
+
+          <div class="roboto-font gap-2 justify-between flex">
+            <button class="copyButton rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button class="callButton text-white bg-[#00A63E] rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+
+        </div>
+        <!-- Ending of Single Card Element -->
+
+        <!-- Beginning of Single Card Element -->
+        <div class="bg-[#41ff6b1a] rounded-3xl shadow-sm p-5 my-card">
+
+          <div class="mb-4 items-center justify-between flex"> <!-- Heart and icon -->
+            <img alt="" src="assets/ambulance.png" class="p-[14px] h-[60px] w-[60px] rounded-2xl bg-red-100">
+            <span class="cardHeart cursor-pointer">
+              <i class="text-xl fa-regular fa-heart"></i>
+            </span>
+          </div>
+
+          <div class="mb-6"> <!-- Description and title -->
+            <h2 class="hind-madurai-font font-bold text-2xl cardMainHeader">Ambulance Number</h2>
+            <p class="roboto-font text-[#5c5c5c] text-lg">Emergency Service</p>
+          </div>
+
+          <div class="mb-6"> <!-- Short info and number -->
+            <h1 class="roboto-font font-bold text-4xl cardPhoneNumber">01627-669222</h1>
+            <p class="text-[#5C5C5C] px-4 hind-madurai font-normal text-lg">Ambulance</p>
+          </div>
+
+          <div class="roboto-font gap-2 justify-between flex">
+            <button class="copyButton rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button class="callButton text-white bg-[#00A63E] rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+
+        </div>
+        <!-- Ending of Single Card Element -->
+
+        <!-- Beginning of Single Card Element -->
+        <div class="bg-[#41ff6b1a] rounded-3xl shadow-sm p-5 my-card">
+
+          <div class="mb-4 items-center justify-between flex"> <!-- Heart and icon -->
+            <img alt="" src="assets/fire-service.png" class="p-[14px] h-[60px] w-[60px] rounded-2xl bg-red-100">
+            <span class="cardHeart cursor-pointer">
+              <i class="text-xl fa-regular fa-heart"></i>
+            </span>
+          </div>
+
+          <div class="mb-6"> <!-- Description and title -->
+            <h2 class="hind-madurai-font font-bold text-2xl cardMainHeader">Fire Service Number</h2>
+            <p class="roboto-font text-[#5c5c5c] text-lg">Fire Service</p>
+          </div>
+
+          <div class="mb-6"> <!-- Short info and number -->
+            <h1 class="roboto-font font-bold text-4xl cardPhoneNumber">01730336699</h1>
+            <p class="text-[#5C5C5C] px-4 hind-madurai font-normal text-lg">Fire</p>
+          </div>
+
+          <div class="roboto-font gap-2 justify-between flex">
+            <button class="copyButton rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button class="callButton text-white bg-[#00A63E] rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+
+        </div>
+        <!-- Ending of Single Card Element -->
+
+        <!-- Beginning of Single Card Element -->
+        <div class="bg-[#41ff6b1a] rounded-3xl shadow-sm p-5 my-card">
+
+          <div class="mb-4 items-center justify-between flex"> <!-- Heart and icon -->
+            <img alt="" src="assets/police.png" class="p-[14px] h-[60px] w-[60px] rounded-2xl bg-blue-100">
+            <span class="cardHeart cursor-pointer">
+              <i class="text-xl fa-regular fa-heart"></i>
+            </span>
+          </div>
+
+          <div class="mb-6"> <!-- Description and title -->
+            <h2 class="hind-madurai-font font-bold text-2xl cardMainHeader">Police Helpline</h2>
+            <p class="roboto-font text-[#5c5c5c] text-lg">Police Service</p>
+          </div>
+
+          <div class="mb-6"> <!-- Short info and number -->
+            <h1 class="roboto-font font-bold text-4xl cardPhoneNumber">01320001299</h1>
+            <p class="text-[#5C5C5C] px-4 hind-madurai font-normal text-lg">Police</p>
+          </div>
+
+          <div class="roboto-font gap-2 justify-between flex">
+            <button class="copyButton rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button class="callButton text-white bg-[#00A63E] rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+
+        </div>
+        <!-- Ending of Single Card Element -->
+
+        <!-- Beginning of Single Card Element -->
+        <div class="bg-[#41ff6b1a] rounded-3xl shadow-sm p-5 my-card">
+
+          <div class="mb-4 items-center justify-between flex"> <!-- Heart and icon -->
+            <img alt="" src="assets/emergency.png" class="p-[14px] h-[60px] w-[60px] rounded-2xl bg-blue-100">
+            <span class="cardHeart cursor-pointer">
+              <i class="text-xl fa-regular fa-heart"></i>
+            </span>
+          </div>
+
+          <div class="mb-6"> <!-- Description and title -->
+            <h2 class="hind-madurai-font font-bold text-2xl cardMainHeader">Child Care</h2>
+            <p class="roboto-font text-[#5c5c5c] text-lg">Child Care Service</p>
+          </div>
+
+          <div class="mb-6"> <!-- Short info and number -->
+            <h1 class="roboto-font font-bold text-4xl cardPhoneNumber">1098</h1>
+            <p class="text-[#5C5C5C] px-4 hind-madurai font-normal text-lg">Child Care</p>
+          </div>
+
+          <div class="roboto-font gap-2 justify-between flex">
+            <button class="copyButton rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button class="callButton text-white bg-[#00A63E] rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+
+        </div>
+        <!-- Ending of Single Card Element -->
+
+        <!-- Beginning of Single Card Element -->
+        <div class="bg-[#41ff6b1a] rounded-3xl shadow-sm p-5 my-card">
+
+          <div class="mb-4 items-center justify-between flex"> <!-- Heart and icon -->
+            <img alt="" src="assets/emergency.png" class="p-[14px] h-[60px] w-[60px] rounded-2xl bg-purple-100">
+            <span class="cardHeart cursor-pointer">
+              <i class="text-xl fa-regular fa-heart"></i>
+            </span>
+          </div>
+
+          <div class="mb-6"> <!-- Description and title -->
+            <h2 class="hind-madurai-font font-bold text-2xl cardMainHeader">Woman Care Helpline</h2>
+            <p class="roboto-font text-[#5c5c5c] text-lg">Woman Care Helpline</p>
+          </div>
+
+          <div class="mb-6"> <!-- Short info and number -->
+            <h1 class="roboto-font font-bold text-4xl cardPhoneNumber">109</h1>
+            <p class="text-[#5C5C5C] px-4 hind-madurai font-normal text-lg">Helpline</p>
+          </div>
+
+          <div class="roboto-font gap-2 justify-between flex">
+            <button class="copyButton rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button class="callButton text-white bg-[#00A63E] rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+
+        </div>
+        <!-- Ending of Single Card Element -->
+
+        <!-- Beginning of Single Card Element -->
+        <div class="bg-[#41ff6b1a] rounded-3xl shadow-sm p-5 my-card">
+
+          <div class="mb-4 items-center justify-between flex"> <!-- Heart and icon -->
+            <img alt="" src="assets/heart.png" class="p-[14px] h-[60px] w-[60px] rounded-2xl bg-red-100">
+            <span class="cardHeart cursor-pointer">
+              <i class="text-xl fa-regular fa-heart"></i>
+            </span>
+          </div>
+
+          <div class="mb-6"> <!-- Description and title -->
+            <h2 class="hind-madurai-font font-bold text-2xl cardMainHeader">Moner Bondhu</h2>
+            <p class="roboto-font text-[#5c5c5c] text-lg">Mental Health</p>
+          </div>
+
+          <div class="mb-6"> <!-- Short info and number -->
+            <h1 class="roboto-font font-bold text-4xl cardPhoneNumber">0177663244</h1>
+            <p class="text-[#5C5C5C] px-4 hind-madurai font-normal text-lg">Mental Health</p>
+          </div>
+
+          <div class="roboto-font gap-2 justify-between flex">
+            <button class="copyButton rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button class="callButton text-white bg-[#00A63E] rounded-lg w-1/2 btn btn-outline">
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+
+        </div>
+        <!-- Ending of Single Card Element -->
+
+      </div>
+
+      <div class="max-sm:w-full w-1/4">
+        <div class="mb-4 items-center justify-between flex">
+          <p class="text-xl font-medium roboto-font">
+            <i class="fa-regular fa-clock"></i> Call History
+          </p>
+          <button class="text-white bg-[#00A63E] w-1/2 btn btn-outline rounded-[50px]" id="callHistoryClearButton">
+            Clear
+          </button>
+        </div>
+
+        <div class="callHistoryContainer">
+          <!-- Start of Individual Entry -->
+          <!-- <div class="bg-[#ebf5ef] rounded-3xl shadow-sm p-4 items-center justify-between flex">
+            <div>
+              <h3 class="text-lg font-semibold inter-font text-[#111111]">National Emergency Number</h3>
+              <p class="text-lg font-normal hind-madurai-font text-[#5C5C5C]">1994-999999</p>
+            </div>
+            <div>
+              <p class="text-[#111111] hind-madurai-font text-lg font-normal">11:36:58 AM</p>
+            </div>
+          </div> -->
+          <!-- End of Individual Entry -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="roboto-font gap-1 my-5 items-center justify-center flex-col flex min-h-14">
+    <p class="text-[#5C5C5C]">Created by</p>
+    <a rel="noopener noreferrer" target="_blank" href="https://github.com/nasablueberry">
+      <div class="p-5 text-center mx-4 badge-soft badge badge-primary">
+        <i class="fa-brands fa-github"></i> Md. Hemel Uddin Chowdhury
+      </div>
+    </a>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
